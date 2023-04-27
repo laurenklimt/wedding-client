@@ -1,0 +1,27 @@
+.invite{
+    height: 100vh;
+    margin: auto;
+    padding: 0 50px;
+    text-align: center;
+}
+
+.invite .container {
+    padding-top: 100px;
+}
+
+.text {
+    padding: 20px 0;
+}
+
+.invite .text p {
+    font-size: 13pt;
+    line-height: 1.2;
+}
+
+.invite .text h1 {
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+.invite .text .first-letter {
+    font-size: 28pt;
+}

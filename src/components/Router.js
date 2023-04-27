@@ -1,0 +1,27 @@
+import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom'
+import Home from '../pages/Home/Home';
+import RSVP from '../pages/RSVP/Rsvp';
+import Event from '../pages/Event/Event';
+import Registry from '../pages/Registry/Registry';
+
+function Router() {
+
+    const BrowserRoutes = () => {
+        return (
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/:id" element ={<Home />} />
+                    <Route path="/:id/rsvp" element ={<RSVP />} />
+                    <Route path="/:id/event" element ={<Event />} />
+                    <Route path="/:id/registry" element ={<Registry />} />
+                </Routes>
+            </BrowserRouter>
+        )
+    }
+
+    return (
+        <BrowserRoutes />
+    )
+}
+
+export default Router;
