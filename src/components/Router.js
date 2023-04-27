@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from '../pages/Home/Home';
 import RSVP from '../pages/RSVP/Rsvp';
 import Event from '../pages/Event/Event';

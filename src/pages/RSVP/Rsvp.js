@@ -15,25 +15,25 @@ function RSVP() {
     const [success, setSuccess] = useState('')
 
     useEffect( () => {
+        const fetchParty = async() => {
+            // await axios.get('/parties/' + params.id)
+            await axios.get('https://lauren-benji-wedding.herokuapp.com/parties/' + params.id)
+            .then(res => {
+                setParty(res.data)
+                setGuests(res.data.guests)
+                if (res.data.responded) {
+                    setSubheading("Your RSVP has been sent")
+                } else {
+                    setSubheading("Please RSVP below")
+                }
+            })
+            .catch(err => console.log(err))
+        }
+
         fetchParty()
         setError("hidden")
         setSuccess("hidden")
-    },[])
-
-    const fetchParty = async() => {
-        // await axios.get('/parties/' + params.id)
-        await axios.get('https://lauren-benji-wedding.herokuapp.com/parties/' + params.id)
-        .then(res => {
-            setParty(res.data)
-            setGuests(res.data.guests)
-            if (res.data.responded) {
-                setSubheading("Your RSVP has been sent")
-            } else {
-                setSubheading("Please RSVP below")
-            }
-        })
-        .catch(err => console.log(err))
-    }
+    },[params])
 
     const updateParty = async() => {
         await axios.put('/parties/' + params.id, party)

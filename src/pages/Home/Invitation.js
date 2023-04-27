@@ -1,8 +1,8 @@
-import { useParams } from 'react-router';
+// import { useParams } from 'react-router';
 import './Invitation.css';
 
 function Invitation() {
-    const params = useParams()
+    // const params = useParams()
 
     return (
         <div className='invite'>

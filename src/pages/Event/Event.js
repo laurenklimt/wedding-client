@@ -1,7 +1,7 @@
-import { useParams } from 'react-router';
+// import { useParams } from 'react-router';
 
 function Event() {
-    const params = useParams()
+    // const params = useParams()
 
     return (
         <>
