@@ -21,7 +21,8 @@ function RSVP() {
     },[])
 
     const fetchParty = async() => {
-        await axios.get('/parties/' + params.id)
+        // await axios.get('/parties/' + params.id)
+        await axios.get('https://lauren-benji-wedding.herokuapp.com/parties/' + params.id)
         .then(res => {
             setParty(res.data)
             setGuests(res.data.guests)
