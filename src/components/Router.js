@@ -10,6 +10,7 @@ function Router() {
         return (
             <BrowserRouter>
                 <Routes>
+                    <Route path="/" element ={<Home />} />
                     <Route path="/:id" element ={<Home />} />
                     <Route path="/:id/rsvp" element ={<RSVP />} />
                     <Route path="/:id/event" element ={<Event />} />
