@@ -36,7 +36,7 @@ function RSVP() {
     },[params])
 
     const updateParty = async() => {
-        await axios.put('/parties/' + params.id, party)
+        await axios.put('https://lauren-benji-wedding.herokuapp.com/parties/' + params.id, party)
         .then((res) => {
             setSubheading(res.data)
             setError("hidden")
