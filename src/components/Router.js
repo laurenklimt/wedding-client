@@ -3,6 +3,7 @@ import Home from '../pages/Home/Home';
 import RSVP from '../pages/RSVP/Rsvp';
 import Event from '../pages/Event/Event';
 import Registry from '../pages/Registry/Registry';
+import Login from '../pages/Login/Login';
 
 function Router() {
 
@@ -10,7 +11,7 @@ function Router() {
         return (
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element ={<Home />} />
+                    <Route path="/" element ={<Login />} />
                     <Route path="/:id" element ={<Home />} />
                     <Route path="/:id/rsvp" element ={<RSVP />} />
                     <Route path="/:id/event" element ={<Event />} />
