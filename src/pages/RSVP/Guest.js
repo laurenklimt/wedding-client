@@ -1,4 +1,5 @@
 import { useContext } from "react"
+import './Guest.css'
 import Context from "../../components/Context"
 
 function Guest(props) {
@@ -21,9 +22,11 @@ function Guest(props) {
     const DietChecklist = () => {
         return (
             dietOptions.map((option, index) => (
-                <>
-                    <input type="checkbox" value={option} checked={guests[guestIndex].diet.includes(option)} onChange={ (e) => handleChangeDiet(e) } /><span>{option}</span>
-                </>
+                <label key={`diet-option-${option}`} className="diet-option">
+                    {option}
+                    <input type="checkbox" value={option} checked={guests[guestIndex].diet.includes(option)} onChange={ (e) => handleChangeDiet(e) } />
+                    <span className="checkmark"></span>
+                </label>
             ))
         )
     }
@@ -107,17 +110,27 @@ function Guest(props) {
     }
 
     return(
-        <div>
-            <h3>{guests[guestIndex].firstName} {guests[guestIndex].lastName}</h3>
+        <div className="guest">
+            <p className="guest-name">{guests[guestIndex].firstName.toUpperCase()} {guests[guestIndex].lastName.toUpperCase()}</p>
+            <div className="response">
+                <div className="response-button">
+                    <input type="radio" id={"accept-" + guestIndex} name={"attendance-" + guestIndex} value="true" checked={guests[guestIndex].rsvp === true} onChange={ (e) => handleChangeResponse(true) } />
+                    <label for={"accept-" + guestIndex}>Accept</label>
+                </div>
+                <div className="response-button">
+                    <input type="radio" id={"decline-" + guestIndex} name={"attendance-" + guestIndex} value="false" checked={guests[guestIndex].rsvp === false} onChange={ (e) => handleChangeResponse(false) } />
+                    <label for={"decline-" + guestIndex}>Decline</label>
+                </div>
+            </div>
 
-            <label htlmfor="yes">Accept</label>
-            <input type="radio" id="accept" name={"attendance-" + guestIndex} value="true" checked={guests[guestIndex].rsvp === true} onChange={ (e) => handleChangeResponse(true) } />
-            <label htlmfor="no">Decline</label>
-            <input type="radio" id="decline" name={"attendance-" + guestIndex} value="false" checked={guests[guestIndex].rsvp === false} onChange={ (e) => handleChangeResponse(false) } />
-
-            <p>Please specify any dietary requirements:</p>
-            <DietChecklist />
-            <input type="text" placeholder="Other, please specify..." defaultValue={dietOtherDefault()} onChange={ (e) => handleChangeDietOther(e) }/>
+            <p className="diet">Please specify any dietary requirements:</p>
+            <div className="diet-list">
+                <DietChecklist />
+            </div>
+            <div className="diet-other">
+                <p>Other: </p>
+                <input type="text" placeholder="please specify..." defaultValue={dietOtherDefault()} onChange={ (e) => handleChangeDietOther(e) }/>
+            </div>
         </div>
     )
 }

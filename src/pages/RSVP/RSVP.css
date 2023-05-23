@@ -1,3 +1,21 @@
-.hidden {
-    display: none;
+.container.rsvp {
+    margin-bottom: 40px;
+    padding-top: 80px;
+    animation: 2s fadeIn;
+}
+@media (min-width: 768px) {
+    .container.rsvp {
+        padding-top: 30px;
+    }
+}
+
+.rsvp button {
+    border: 0.5px solid #3e4041;
+    border-radius: 0;
+    background: transparent;
+    color: #3e4041;
+    font-family: "Cormorant Garamond";
+    padding: 10px 12px;
+    font-weight: bold;
+    cursor: pointer;
 }

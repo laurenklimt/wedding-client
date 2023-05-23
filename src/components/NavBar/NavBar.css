@@ -1,0 +1,26 @@
+@media (max-width: 779px) {
+    .nav-bar-large {
+        display: none;
+    }
+    .nav-bar-small {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav-bar-large {
+        display: block;
+    }
+    .nav-bar-small {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+

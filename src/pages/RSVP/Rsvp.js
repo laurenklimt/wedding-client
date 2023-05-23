@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react"
-import { useParams } from 'react-router';
 import axios from 'axios';
 import "./RSVP.css"
 import Context from "../../components/Context";
 import Guest from "./Guest";
+import NavBar from "../../components/NavBar/NavBar";
 
 function RSVP() {
-    const params = useParams()
-
+    const [id, setId] = useState('')
     const [party, setParty] = useState({})
     const [guests, setGuests] = useState([])
     const [subheading, setSubheading] = useState('')
@@ -15,16 +14,20 @@ function RSVP() {
     const [success, setSuccess] = useState('')
 
     useEffect( () => {
+        setId(localStorage.getItem('id'))
+    }, [])
+
+    useEffect( () => {
         const fetchParty = async() => {
-            // await axios.get('/parties/' + params.id)
-            await axios.get('https://lauren-benji-wedding.herokuapp.com/parties/' + params.id)
+            // await axios.get('/party/id/' + id)
+            await axios.get('https://lauren-benji-wedding.herokuapp.com/party/id/' + id)
             .then(res => {
                 setParty(res.data)
                 setGuests(res.data.guests)
                 if (res.data.responded) {
                     setSubheading("Your RSVP has been sent")
                 } else {
-                    setSubheading("Please RSVP below")
+                    setSubheading("Please RSVP below by 13 July 2023")
                 }
             })
             .catch(err => console.log(err))
@@ -33,10 +36,11 @@ function RSVP() {
         fetchParty()
         setError("hidden")
         setSuccess("hidden")
-    },[params])
+    },[id])
 
     const updateParty = async() => {
-        await axios.put('https://lauren-benji-wedding.herokuapp.com/parties/' + params.id, party)
+        // await axios.put('/party/id/' + id, party)
+        await axios.put('https://lauren-benji-wedding.herokuapp.com/party/id/' + id, party)
         .then((res) => {
             setSubheading(res.data)
             setError("hidden")
@@ -57,20 +61,24 @@ function RSVP() {
     }
 
     return (
-        <Context.Provider value={{guests, setGuests, party, setParty}}>
-            <h1>RSVP</h1>
-            <p>{subheading}</p>
+        <>
+            <NavBar />
+            <Context.Provider value={{guests, setGuests, party, setParty}}>
+                <div className="container rsvp">
+                    <h1>RSVP</h1>
+                    <p>13 AUGUST 2023 -  <b>{subheading}</b></p>
 
-            <form>
-                {guests?.map( (item, index) => (
-                    <Guest index={index} />
-                ))}
-                <p id="form-error" className={"form-error " + error}>Please RSVP for all guests.</p>
-                <button type="submit" onClick={handleSubmit}>RSVP</button>
-                <p id="form-success" className={"form-success " + success}>Thank you for submitting your RSVP.</p>
-            </form>
-
-        </Context.Provider>
+                    <form>
+                        {guests?.map( (item, index) => (
+                            <Guest key={`guest-${index}`} index={index} />
+                        ))}
+                        <p id="form-error" className={"form-error " + error}><b>PLEASE RSVP FOR ALL GUESTS.</b></p>
+                        <button type="submit" onClick={handleSubmit}>RSVP</button>
+                        <p id="form-success" className={"form-success " + success}><b>Thank you for submitting your RSVP.</b></p>
+                    </form>
+                </div>
+            </Context.Provider>
+        </>
     )
 }
 

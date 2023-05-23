@@ -1,14 +1,14 @@
 import './Photos.css';
-import photo from '../../assets/sunset.jpeg'
+import sunset from '../../assets/sunset.jpeg'
+import falls from '../../assets/falls.jpeg'
 
 function Photos() {
 
     return (
         <div className='photos'>
-            <div className='container'>
-                <div className='gallery'>
-                    <img src={photo} alt="sunset" height='200'/>
-                </div>
+            <div className='positions'>
+                <img className='big' src={sunset} alt="sunset"/>
+                <img className='small' src={falls} alt="view"/>
             </div>
         </div>
     );

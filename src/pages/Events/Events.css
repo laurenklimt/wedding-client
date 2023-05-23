@@ -1,0 +1,104 @@
+.container.events {
+    margin-bottom: 50px;
+    padding-top: 80px;
+    animation: 2s fadeIn;
+}
+@media (min-width: 768px) {
+    .container.events {
+        padding-top: 30px;
+    }
+}
+
+.events .event {
+    margin: 50px 0;
+    border-bottom: 0.5px solid #c8c4b7;
+    padding-bottom: 50px;
+}
+
+.events .photo {
+    margin-right: 20px;
+}
+
+.events .event h3 {
+    margin: 5px 0;
+}
+.events .event p {
+    margin-top: 0;
+}
+
+.events .event .detail {
+    display: flex;
+}
+
+.events .event .detail .detail-1 {
+    margin-right: 8px;
+}
+
+.events .event .detail .address:not(:last-child) {
+    margin: 0;
+}
+
+.events .bottom-links a {
+    display: block;
+    margin-bottom: 10px;
+    color: unset;
+}
+
+.events a:focus, .events a:hover, .events a:active, .events a:target {
+    opacity: 50%;
+}
+
+.events a i {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.events .date {
+    text-align: center;
+    padding-right: 20px;
+    border-right: 0.5px solid #c8c4b7;
+}
+
+.events .date h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.events .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event .detail.top {
+    margin-bottom: 20px;
+}
+
+.events h2 {
+    margin: 0;
+}
+
+.events h3 {
+    font-weight: normal;
+}
+
+@media (min-width: 992px) {
+    .events-group {
+        display: flex;
+    }
+    .events-group .event {
+        border-bottom: 0;
+        flex: 1;
+        align-items: stretch;
+    }
+    .events .event {
+        margin: 30px 0;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    .events-group .event + .event {
+        padding-left: 40px;
+        margin-left: 40px;
+        border-left: 0.5px solid #c8c4b7;
+    }
+}

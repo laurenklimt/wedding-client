@@ -1,0 +1,10 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+DTSTART:20230813T050000Z
+DTEND:20230813T071500Z
+SUMMARY:Lauren & Benji's Wedding
+DESCRIPTION:The Klimt and Prawer families are thrilled to invite you to celebrate the marriage of Lauren and Benji.\nThe ceremony will begin at 3:15pm sharp with the Bedekin, followed immediately by the Chuppah. Please aim to arrive by 3:00pm. There will be refreshments at the Synagogue to enjoy before you head off to the reception.
+LOCATION:The Central Synagogue, 15 Bon Accord Avenue, Bondi Junction, Sydney, NSW
+END:VEVENT
+END:VCALENDAR

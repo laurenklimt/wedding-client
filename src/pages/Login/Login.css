@@ -1,0 +1,30 @@
+.login-page {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.login-page form {
+    margin: 40px 0;
+}
+
+.login-page input {
+    padding: 10px;
+}
+
+.login-page .login-submit {
+    border: none;
+    background: transparent;
+    color: #3e4041;
+    padding: 10px;
+    position: fixed;
+    cursor: pointer;
+}
+
+.login-page .login-submit i {
+    font-size: 10pt;
+}
+
+.login-page .error {
+    font-size: 9pt;
+    margin-top: 40px;
+}

@@ -1,0 +1,66 @@
+.nav-bar {
+    height: 50px;
+    border-bottom: 0.5px solid #c8c4b7;
+    background: #f5f2f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    -moz-box-shadow: 0 3px 20px -8px #c8c4b7;
+    -webkit-box-shadow: 0 3px 20px -8px #c8c4b7;
+    box-shadow: 0 3px 20px -8px #c8c4b7;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10000;
+}
+
+.nav-bar .item {
+    text-decoration: unset;
+    color: unset;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav-bar .item.l-b {
+    font-family: "Mrs Saint Delafield";
+    font-size: 18pt;
+    padding-bottom: 5px;
+}
+.nav-bar .item.l-b .and {
+    font-size: 10pt;
+}
+
+.menu {
+    position: absolute;
+    z-index: 1000;
+    background: #f5f2f0;
+    width: 100%;
+    height: 100vh;
+    border-bottom: 0.5px solid #c8c4b7;
+    top: -100vh;
+    transition: top 1s ease-in-out;
+}
+
+.menu.open {
+    top: 0;
+    position: fixed;
+}
+
+.menu .container {
+    padding: 30px;
+    padding-top: 50px;
+    margin-top: 70px;
+}
+
+.menu .link {
+    display: block;
+    margin-bottom: 50px;
+    text-decoration: unset;
+    color: unset;
+}
+
+.menu .link:focus {
+    text-decoration: underline;
+}

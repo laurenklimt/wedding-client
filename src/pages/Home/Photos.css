@@ -1,13 +1,25 @@
 .photos {
-    height: 100vh;
-    margin: auto;
-    /* border: 1px solid black; */
-}
-
-.photos .container {
-    /* display: flex;
-    height: 100%;
+    display: flex;
     justify-content: center;
-    align-items: center; */
+    height: 100%;
+    align-items: center;
 }
 
+.photos .positions {
+    height: 50vh;
+    width: 60vh;
+    position: relative;
+    text-align: left;
+}
+
+.photos .big {
+    height: 100%;
+}
+
+.photos .small {
+    position: absolute;
+    height: 50%;
+    right: 0;
+    bottom: 25%;
+    border: 2px solid #f5f2f0;
+}

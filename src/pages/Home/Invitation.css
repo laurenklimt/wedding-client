@@ -1,27 +1,116 @@
-.invite{
-    height: 100vh;
-    margin: auto;
-    padding: 0 50px;
+.invite {
+    min-height: 100vh;
+}
+
+.invite-container{
     text-align: center;
+    padding: 30px 40px 40px 40px;
+    position: relative;
 }
 
-.invite .container {
-    padding-top: 100px;
-}
-
-.text {
+.text-container {
+    max-width: 380px;
     padding: 20px 0;
 }
 
 .invite .text p {
-    font-size: 13pt;
-    line-height: 1.2;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin: 5px 0px;
 }
 
 .invite .text h1 {
-    letter-spacing: 1px;
-    line-height: 1.4;
+    font-family: "Mrs Saint Delafield";
+    font-size: 48px;
 }
 .invite .text .first-letter {
-    font-size: 28pt;
+    font-size: 60px;
+    letter-spacing: -4px;
+}
+
+.invite .text h2 {
+    margin-top: -10px;
+}
+.invite .text .and {
+    font-size: 25pt;
+    margin:  0 10px 5px 10px;
+}
+
+.invite .invite-section {
+    margin: 20px 0;
+}
+
+.invite .names {
+    color: #978f86;
+}
+
+@keyframes bounce {
+    0%, 10%, 100% {
+        transform: translateY(0);
+    }
+	50%, 60% {
+        transform: translateY(15px);
+    }
+}
+
+.invite .scroll-down {
+    color: #978f86;
+    animation: bounce 3s infinite;
+}
+
+@media (max-width: 991px) {
+    .invite {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .invite-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+    .invite .text {
+        display: flex;
+        align-items: center;
+        padding: 20px 0 30px 0;
+    }
+
+    .photos {
+        height: unset;
+        order: 1;
+    }
+    .photos .positions{
+        height: 25vh;
+        width: 30vh;
+    }
+
+    .invite .scroll-down {
+        order: 2;
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 992px) {
+    .invite {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .invite-container {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+    }
+    .invite .text {
+        display: flex;
+        align-items: center;
+    }
+
+    .invite .scroll-down {
+        position: absolute;
+        bottom: 60px;
+        right: 50%;
+    }
 }

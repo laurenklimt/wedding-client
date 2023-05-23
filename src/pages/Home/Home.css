@@ -1,0 +1,13 @@
+.home {
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+    height: 100vh;
+}
+
+.home > div {
+    scroll-snap-align: center;
+}
+  
+.invite {
+    animation: 5s fadeIn;
+}

@@ -1,0 +1,16 @@
+.nav-bar-large .nav-bar {
+    position: relative;
+    padding: 10px 30px;
+}
+
+.nav-bar-large a {
+    text-decoration: none;
+    color: unset;
+    padding: 0 20px;
+}
+
+.nav-bar-large a:hover, .nav-bar-large a:focus, .nav-bar-large a:active {
+    color: #978f86;
+}
+
+/* .nav-bar-large */
