@@ -1,6 +1,5 @@
 import './Registry.css'
 import NavBar from "../../components/NavBar/NavBar";
-import giantSteps from "../../assets/giant-steps.png"
 import peters from "../../assets/peters.png"
 import myer from "../../assets/myer.png"
 
