@@ -1,8 +1,5 @@
 import './Details.css'
 import { Link } from "react-router-dom";
-import graduation from '../../assets/graduation.jpeg'
-import camp from '../../assets/camp.jpeg'
-import sea from '../../assets/sea-2.jpg'
 import NavBar from "../../components/NavBar/NavBar";
 
 function Details() {
@@ -38,7 +35,7 @@ function Details() {
             <div className='section'>
                 <h3>GETTING TO THE VENUE</h3>
                 <p>It is approximately a 20 minute drive between The Central Synagogue and The Ivy. We anticipate that traffic leaving Bondi after City2Surf will have dissipated by this time. Please note that the doors to the reception room will only open at 6pm and not before. There will be refreshments following the Chuppah so you are welcome to stay and enjoy until it is time to go.</p>
-                <p>Discounted parking is availible near The Ivy at <a href="https://goo.gl/maps/oRrd1BpDUUYXEo7f7" target="_blank">109 Pitt Street</a> (closes at Midnight) and <a href="https://goo.gl/maps/72uyUUZDSKtmdpvX8" target="_blank">No.1 Martin Place</a> (24 hours). A <a href="https://merivale.com/secureparking/" target="_blank">10% Merivale discount</a> can be used on pre-booked parking at these Secure Parking sites.</p>
+                <p>Discounted parking is availible near The Ivy at <a href="https://goo.gl/maps/oRrd1BpDUUYXEo7f7" target="_blank" rel="noreferrer">109 Pitt Street</a> (closes at Midnight) and <a href="https://goo.gl/maps/72uyUUZDSKtmdpvX8" target="_blank" rel="noreferrer">No.1 Martin Place</a> (24 hours). A <a href="https://merivale.com/secureparking/" target="_blank" rel="noreferrer">10% Merivale discount</a> can be used on pre-booked parking at these Secure Parking sites.</p>
                 <p>We reccomend using rideshare and taxi services to travel between the venue with ease.</p>
             </div>
         )

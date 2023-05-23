@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
-import falls from '../../assets/falls.jpeg'
 import shnat from '../../assets/shnat.jpeg'
-import float from '../../assets/float.jpeg'
 import './HomeNav.css';
 
 function HomeNav(props) {
@@ -49,7 +47,7 @@ function HomeNav(props) {
                 <div className="col photo first">
                     <div className="nav-component">
                         <div className="photo-container">
-                            <img className="photo" src={shnat}/>
+                            <img className="photo" src={shnat} alt="Lauren and Benji 2015"/>
                         </div>
                     </div>
                 </div>

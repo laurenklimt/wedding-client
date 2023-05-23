@@ -25,7 +25,7 @@ function Events() {
                             <div className='event'>
                                 <div className='detail top'>
                                     <div className='photo'>
-                                        <img src={photos[i]} width="100" />
+                                        <img src={photos[i]} width="100" alt="Lauren and Benji's engagement" />
                                     </div>
                                     <div className='title'>
                                         <h2>{ev.day} {ev.month.slice(0, 3).toUpperCase()}</h2>
@@ -51,7 +51,7 @@ function Events() {
                                     <p>{ev.dress}</p>
                                 </div>
                                 <div>
-                                    Add to calendar <a href={ev.calendar.google} target="_blank">Google</a> | <a href={cal[i]} download>iCal</a> | <a href={ev.calendar.outlook} target="_blank">Outlook</a>
+                                    Add to calendar <a href={ev.calendar.google} target="_blank" rel="noreferrer">Google</a> | <a href={cal[i]} download>iCal</a> | <a href={ev.calendar.outlook} target="_blank" rel="noreferrer">Outlook</a>
                                 </div>
                             </div>
                         )
