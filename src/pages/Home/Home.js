@@ -3,7 +3,6 @@ import { useLocation, useNavigate } from "react-router-dom";
 import axios from 'axios';
 import './Home.css';
 import Invitation from './Invitation';
-import Photos from './Photos';
 import HomeNav from './HomeNav';
 
 function Home() {
@@ -11,7 +10,7 @@ function Home() {
     const location = useLocation()
 
     const [id, setId] = useState('')
-    const [party, setParty] = useState({})
+    // const [party, setParty] = useState({})
     const [guests, setGuests] = useState([])
 
     useEffect(() => {
@@ -55,7 +54,7 @@ function Home() {
             // await axios.get('/party/id/' + id)
             await axios.get('https://lauren-benji-wedding.herokuapp.com/party/id/' + id)
             .then(res => {
-                setParty(res.data)
+                // setParty(res.data)
                 setGuests(res.data.guests)
             })
             .catch(err => console.log(err))
