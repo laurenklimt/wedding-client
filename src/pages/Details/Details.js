@@ -46,10 +46,11 @@ function Details() {
             <NavBar />
             <div className="container details">
                 <h1>EVENT DETAILS</h1>
-                <br />
-                <City2Surf />
-                <Sydney />
-                <Transport />
+                <div className="detail-sections">
+                    <City2Surf />
+                    <Sydney />
+                    <Transport />
+                </div>
                 <div className="bottom-links">
                     <Link to="/rsvp"><b>RSVP</b> for the Chuppah and Reception<i className="material-icons">arrow_forward_ios</i></Link>
                     <Link to="/events">See all of the <b>events</b><i className="material-icons">arrow_forward_ios</i></Link>

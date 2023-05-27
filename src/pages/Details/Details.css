@@ -1,12 +1,16 @@
 .container.details {
     margin-bottom: 80px;
-    padding-top: 80px;
+    padding-top: 100px;
     animation: 2s fadeIn;
 }
 @media (min-width: 768px) {
     .container.details {
-        padding-top: 30px;
+        padding-top: 40px;
     }
+}
+
+.details .detail-sections {
+    padding-top: 10px;
 }
 
 .details .section {
@@ -20,9 +24,13 @@
     text-align: center;
 }
 
+.details .bottom-links {
+    padding-top: 20px;
+}
+
 .details .bottom-links a {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: unset;
 }
 

@@ -54,12 +54,14 @@
     border-radius: 0;
 }
 
+.guest .diet-other {
+    margin: 10px 0;
+}
 .guest .diet-option {
     display: block;
     position: relative;
-    padding-left: 20px;
-    margin-bottom: 8px;
-    margin-right: 12px;
+    padding-left: 25px;
+    margin: 10px 20px 10px 0;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -77,8 +79,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 15px;
-    width: 15px;
+    height: 18px;
+    width: 18px;
     border: 0.5px solid #c8c4b7;
 }
 .guest .diet-option .checkmark:after {

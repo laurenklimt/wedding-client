@@ -1,11 +1,11 @@
 .container.events {
     margin-bottom: 80px;
-    padding-top: 80px;
+    padding-top: 100px;
     animation: 2s fadeIn;
 }
 @media (min-width: 768px) {
     .container.events {
-        padding-top: 30px;
+        padding-top: 40px;
     }
 }
 
@@ -38,9 +38,13 @@
     margin: 0;
 }
 
+.events .bottom-links {
+    padding-top: 20px;
+}
+
 .events .bottom-links a {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: unset;
 }
 
@@ -80,6 +84,10 @@
 
 .events h3 {
     font-weight: normal;
+}
+
+.events .calendar a {
+    padding: 10px;
 }
 
 @media (min-width: 992px) {

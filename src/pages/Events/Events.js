@@ -50,7 +50,7 @@ function Events() {
                                     <p className='detail-1'>DRESS:</p>
                                     <p>{ev.dress}</p>
                                 </div>
-                                <div>
+                                <div className="calendar">
                                     Add to calendar <a href={ev.calendar.google} target="_blank" rel="noreferrer">Google</a> | <a href={cal[i]} download>iCal</a> | <a href={ev.calendar.outlook} target="_blank" rel="noreferrer">Outlook</a>
                                 </div>
                             </div>
