@@ -1,11 +1,11 @@
 .home-nav {
-    height: 100vh;
+    height: -webkit-fill-available;
     text-align: center;
     margin: auto;
 }
 
 .home-nav .home-nav-container {
-    height: 100%;
+    height: -webkit-fill-available;
     display: flex;
     margin: auto;
     flex-wrap: wrap;

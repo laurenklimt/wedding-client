@@ -32,7 +32,7 @@ function Login() {
         <div className="container login-page">
             <p>PLEASE ENTER YOUR EMAIL</p>
             <form>
-                <input type="text" id="email" value={email} onChange={ (e) => setEmail(e.target.value) } />
+                <input type="text" autocorrect="off" autocapitalize="off" id="email" value={email} onChange={ (e) => setEmail((e.target.value).toLowerCase()) } />
                 <button type="submit" onClick={handleSubmit} className="login-submit">
                     <i className="material-icons">arrow_forward_ios</i>
                 </button>
