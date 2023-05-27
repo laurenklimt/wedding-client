@@ -8,13 +8,14 @@ function Login() {
     const [email, setEmail] = useState('')
     const [error, setError] = useState('hidden')
 
+    console.log(email)
     useEffect(()=>{
         localStorage.removeItem('id')
     }, []) 
 
     const validateEmail = async() => {
         // await axios.get('/party/email/' + email)
-        await axios.get('https://lauren-benji-wedding.herokuapp.com/party/email/' + email)
+        await axios.get('https://lauren-benji-wedding.herokuapp.com/party/email/' + email.toLowerCase())
         .then((res) => {
             setError('hidden')
             localStorage.setItem('id', res.data._id)
@@ -32,7 +33,7 @@ function Login() {
         <div className="container login-page">
             <p>PLEASE ENTER YOUR EMAIL</p>
             <form>
-                <input type="text" autocorrect="off" autocapitalize="off" id="email" value={email} onChange={ (e) => setEmail((e.target.value).toLowerCase()) } />
+                <input type="text" autocorrect="off" autocapitalize="off" id="email" value={email} onChange={ (e) => setEmail(e.target.value) } />
                 <button type="submit" onClick={handleSubmit} className="login-submit">
                     <i className="material-icons">arrow_forward_ios</i>
                 </button>
