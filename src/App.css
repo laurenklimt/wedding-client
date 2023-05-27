@@ -69,3 +69,7 @@ a {
       opacity: 1;
   }
 }
+
+input[type="text"] {
+  font-size: 16px;
+}
