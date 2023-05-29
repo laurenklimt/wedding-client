@@ -4,11 +4,12 @@ import axios from 'axios';
 import './Home.css';
 import Invitation from './Invitation';
 import HomeNav from './HomeNav';
+import Loading from "../../components/Loading";
 
 function Home() {
     const navigate = useNavigate()
     const location = useLocation()
-
+    const [loading, setLoading] = useState(true)
     const [id, setId] = useState('')
     // const [party, setParty] = useState({})
     const [guests, setGuests] = useState([])
@@ -56,18 +57,25 @@ function Home() {
             .then(res => {
                 // setParty(res.data)
                 setGuests(res.data.guests)
+                setLoading(false)
             })
             .catch(err => console.log(err))
         }
         fetchParty()
     },[id])
 
-    return (
-        <div className="home">
-            <Invitation guests={guests}/>
-            <HomeNav />
-        </div>
-    );
+    if(loading) {
+        return(
+            <Loading />
+        )
+    } else {
+        return (
+            <div className="home">
+                <Invitation guests={guests}/>
+                <HomeNav />
+            </div>
+        )
+    }
 }
 
 export default Home;

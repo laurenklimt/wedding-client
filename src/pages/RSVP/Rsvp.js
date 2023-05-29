@@ -4,6 +4,7 @@ import "./RSVP.css"
 import Context from "../../components/Context";
 import Guest from "./Guest";
 import NavBar from "../../components/NavBar/NavBar";
+import Loading from "../../components/Loading";
 
 function RSVP() {
     const [id, setId] = useState('')
@@ -12,6 +13,7 @@ function RSVP() {
     const [subheading, setSubheading] = useState('')
     const [error, setError] = useState('')
     const [success, setSuccess] = useState('')
+    const [loading, setLoading] = useState(true)
 
     useEffect( () => {
         setId(localStorage.getItem('id'))
@@ -29,6 +31,7 @@ function RSVP() {
                 } else {
                     setSubheading("Please RSVP below by 13 July 2023")
                 }
+                setLoading(false)
             })
             .catch(err => console.log(err))
         }
@@ -60,26 +63,35 @@ function RSVP() {
         updateParty()
     }
 
-    return (
-        <>
-            <NavBar />
-            <Context.Provider value={{guests, setGuests, party, setParty}}>
-                <div className="container rsvp">
-                    <h1>RSVP</h1>
-                    <p>13 AUGUST 2023 -  <b>{subheading}</b></p>
-
-                    <form>
-                        {guests?.map( (item, index) => (
-                            <Guest key={`guest-${index}`} index={index} />
-                        ))}
-                        <p id="form-error" className={"form-error " + error}><b>PLEASE RSVP FOR ALL GUESTS.</b></p>
-                        <button type="submit" onClick={handleSubmit}>RSVP</button>
-                        <p id="form-success" className={"form-success " + success}><b>Thank you for submitting your RSVP.</b></p>
-                    </form>
-                </div>
-            </Context.Provider>
-        </>
-    )
+    if(loading) {
+        return (
+            <>
+                <NavBar />
+                <Loading />
+            </>
+        )
+    } else {
+        return (
+            <>
+                <NavBar />
+                <Context.Provider value={{guests, setGuests, party, setParty}}>
+                    <div className="container rsvp">
+                        <h1>RSVP</h1>
+                        <p>13 AUGUST 2023 -  <b>{subheading}</b></p>
+                        <p>{loading}</p>
+                        <form>
+                            {guests?.map( (item, index) => (
+                                <Guest key={`guest-${index}`} index={index} />
+                            ))}
+                            <p id="form-error" className={"form-error " + error}><b>PLEASE RSVP FOR ALL GUESTS.</b></p>
+                            <button type="submit" onClick={handleSubmit}>RSVP</button>
+                            <p id="form-success" className={"form-success " + success}><b>Thank you for submitting your RSVP.</b></p>
+                        </form>
+                    </div>
+                </Context.Provider>
+            </>
+        )
+    }
 }
 
 export default RSVP;
