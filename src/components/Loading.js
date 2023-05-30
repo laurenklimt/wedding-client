@@ -1,5 +1,11 @@
+import './Loading.css'
+
 function Loading() {
-    return (<p>Loading</p>)
+    return (
+        <div className='loading-container'>
+            <p>loading ...</p>
+        </div>
+    )
 }
 
 export default Loading

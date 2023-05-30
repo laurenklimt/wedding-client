@@ -1,0 +1,14 @@
+.loading-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-container p {
+    animation: 2s fadeIn;
+    animation: 2s fadeOut;
+}

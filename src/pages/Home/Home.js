@@ -66,7 +66,8 @@ function Home() {
 
     if(loading) {
         return(
-            <Loading />
+            // <Loading />
+            null
         )
     } else {
         return (
