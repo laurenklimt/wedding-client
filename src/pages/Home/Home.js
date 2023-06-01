@@ -4,7 +4,7 @@ import axios from 'axios';
 import './Home.css';
 import Invitation from './Invitation';
 import HomeNav from './HomeNav';
-import Loading from "../../components/Loading";
+// import Loading from "../../components/Loading";
 
 function Home() {
     const navigate = useNavigate()
