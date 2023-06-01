@@ -73,7 +73,6 @@
     .invite .text {
         display: flex;
         align-items: center;
-        padding: 20px 0 30px 0;
     }
 
     .photos {
@@ -87,7 +86,7 @@
 
     .invite .scroll-down {
         order: 2;
-        margin-top: 40px;
+        margin: 20px 0;
     }
 }
 
