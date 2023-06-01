@@ -1,7 +1,8 @@
 .home {
     scroll-snap-type: y mandatory;
+    height: 100%;
+    position: fixed;
     overflow: scroll;
-    height: 100vh;
 }
 
 .home > div {

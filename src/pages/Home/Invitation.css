@@ -1,5 +1,5 @@
 .invite {
-    height: -webkit-fill-available;
+    height: 100%;
 }
 
 .invite-container{
@@ -68,7 +68,6 @@
     .invite-container {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         justify-content: space-evenly;
     }
     .invite .text {

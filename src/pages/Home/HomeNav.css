@@ -1,20 +1,16 @@
 .home-nav {
-    height: -webkit-fill-available;
+    height: 100%;
     text-align: center;
     margin: auto;
 }
 
 .home-nav .home-nav-container {
-    height: -webkit-fill-available;
+    height: 100%;
     display: flex;
     margin: auto;
     flex-wrap: wrap;
     align-content: center;
 }
-
-/* .home-nav .col {
-    border-top: 0.5px solid #c8c4b7;
-} */
 
 .home-nav .col {
     flex: 0 0 50%;
