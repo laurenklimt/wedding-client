@@ -109,4 +109,7 @@
         margin-left: 40px;
         border-left: 0.5px solid #c8c4b7;
     }
+    .events .calendar a {
+        padding: 2px;
+    }
 }

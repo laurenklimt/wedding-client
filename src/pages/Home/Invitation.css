@@ -74,7 +74,9 @@
         display: flex;
         align-items: center;
     }
-
+    .text-container {
+        padding-bottom: 30px;
+    }
     .photos {
         height: unset;
         order: 1;
@@ -86,7 +88,8 @@
 
     .invite .scroll-down {
         order: 2;
-        margin: 20px 0;
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
 }
 
