@@ -4,14 +4,12 @@ import axios from 'axios';
 import './Home.css';
 import Invitation from './Invitation';
 import HomeNav from './HomeNav';
-// import Loading from "../../components/Loading";
 
 function Home() {
     const navigate = useNavigate()
     const location = useLocation()
     const [loading, setLoading] = useState(true)
     const [id, setId] = useState('')
-    // const [party, setParty] = useState({})
     const [guests, setGuests] = useState([])
 
     useEffect(() => {
@@ -55,7 +53,6 @@ function Home() {
             // await axios.get('/party/id/' + id)
             await axios.get('https://lauren-benji-wedding.herokuapp.com/party/id/' + id)
             .then(res => {
-                // setParty(res.data)
                 setGuests(res.data.guests)
                 setLoading(false)
             })
@@ -66,7 +63,6 @@ function Home() {
 
     if(loading) {
         return(
-            // <Loading />
             null
         )
     } else {

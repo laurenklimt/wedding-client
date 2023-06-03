@@ -1,7 +1,7 @@
-const Aufrauf = {
-    event: 'Aufrauf | Call up',
+const Aufruf = {
+    event: 'Aufruf | Call up',
     subtext: 'Call up',
-    description: 'Benji and Lauren will both be called to the Torah during Mincha (afternoon service) which will be followed by a Kiddush and Havdallah (bringing out Shabbat).',
+    description: 'Benji and Lauren will both be called to the Torah during Mincha (afternoon service) which will be followed by a kiddush and havdalah (bringing out Shabbat).',
     day: 5,
     month: 'August',
     year: 2023,
@@ -9,9 +9,9 @@ const Aufrauf = {
     location: ['Shira Hadasha,', '222 Balaclava Road, Caulfield,', 'Melbourne, VIC'],
     dress: 'Modest, smart casual',
     calendar: {
-        google: 'https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20230805T063000Z%2F20230805T083000Z&details=Benji%20and%20Lauren%20will%20be%20called%20to%20the%20Torah%20during%20Mincha%20%28afternoon%20service%29%20which%20will%20be%20followed%20by%20a%20Kiddush%20and%20Havdallah%20%28bringing%20out%20Shabbat%29.&location=Shira%20Hadasha%2C%20222%20Balaclava%20Road%2C%20Caulfield%2C%20Melbourne%2C%20VIC&text=Lauren%20%26%20Benji%27s%20Aufrauf',
-        outlook: 'https://outlook.live.com/calendar/0/deeplink/compose?body=Benji%20and%20Lauren%20will%20be%20called%20to%20the%20Torah%20during%20Mincha%20%28afternoon%20service%29%20which%20will%20be%20followed%20by%20a%20Kiddush%20and%20Havdallah%20%28bringing%20out%20Shabbat%29.&enddt=2023-08-05T08%3A30%3A00%2B00%3A00&location=Shira%20Hadasha%2C%20222%20Balaclava%20Road%2C%20Caulfield%2C%20Melbourne%2C%20VIC&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2023-08-05T06%3A30%3A00%2B00%3A00&subject=Lauren%20%26%20Benji%27s%20Aufrauf',
-        apple: '../../assets/cal/aufrauf.ics'
+        google: 'https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20230805T063000Z%2F20230805T083000Z&details=Benji%20and%20Lauren%20will%20be%20called%20to%20the%20Torah%20during%20Mincha%20%28afternoon%20service%29%20which%20will%20be%20followed%20by%20a%20Kiddush%20and%20Havdallah%20%28bringing%20out%20Shabbat%29.&location=Shira%20Hadasha%2C%20222%20Balaclava%20Road%2C%20Caulfield%2C%20Melbourne%2C%20VIC&text=Lauren%20%26%20Benji%27s%20Aufruf',
+        outlook: 'https://outlook.live.com/calendar/0/deeplink/compose?body=Benji%20and%20Lauren%20will%20be%20called%20to%20the%20Torah%20during%20Mincha%20%28afternoon%20service%29%20which%20will%20be%20followed%20by%20a%20Kiddush%20and%20Havdallah%20%28bringing%20out%20Shabbat%29.&enddt=2023-08-05T08%3A30%3A00%2B00%3A00&location=Shira%20Hadasha%2C%20222%20Balaclava%20Road%2C%20Caulfield%2C%20Melbourne%2C%20VIC&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2023-08-05T06%3A30%3A00%2B00%3A00&subject=Lauren%20%26%20Benji%27s%20Aufruf',
+        apple: '../../assets/cal/aufruf.ics'
     }
 }
 
@@ -49,6 +49,6 @@ const Reception = {
     }
 }
 
-const EventDetails = [ Aufrauf, Chuppah, Reception ]
+const EventDetails = [ Aufruf, Chuppah, Reception ]
 
 export default EventDetails
