@@ -6,13 +6,13 @@ import NavBar from "../../components/NavBar/NavBar";
 import engagement1 from '../../assets/engagement-1.JPG'
 import engagement2 from '../../assets/engagement-2.jpeg'
 import engagement3 from '../../assets/engagement-3.JPG'
-import aufrauf from '../../assets/cal/aufrauf.ics'
+import aufruf from '../../assets/cal/aufruf.ics'
 import chuppah from '../../assets/cal/chuppah.ics'
 import reception from '../../assets/cal/reception.ics'
 
 function Events() {
     const photos = [engagement1, engagement2, engagement3]
-    const cal = [aufrauf, chuppah, reception]
+    const cal = [aufruf, chuppah, reception]
 
     return (
         <>
