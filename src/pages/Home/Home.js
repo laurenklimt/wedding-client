@@ -77,7 +77,7 @@ function Home() {
                         <Invitation guests={guests}/>
                     </div>
                 </div>
-                <div class="flowers"><img src={Flowers} width="100%"/></div>
+                <div class="flowers"><img src={Flowers} width="100%" alt="flowers"/></div>
             </>
         )
     }

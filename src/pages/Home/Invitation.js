@@ -23,7 +23,7 @@ function Invitation(props) {
                     <p><b>DEAR <Names/>,</b></p>
                     <p>THE KLIMT AND PRAWER FAMILIES ARE THRILLED TO INVITE YOU TO CELEBRATE THE MARRIAGE OF</p>
                     <div className='names'>
-                        <img src={NamesJpg} width="100%"/>
+                        <img src={NamesJpg} width="100%" alt="Lauren and Benji"/>
                         <h3 className='hebrew'>חנה וישראל בנימין</h3>
                     </div>
                     <p>SUNDAY, 13TH AUGUST 2023<br/><span className='hebrew'>כ"ו אב תשפ"ג</span></p>
