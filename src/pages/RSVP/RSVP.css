@@ -10,12 +10,20 @@
 }
 
 .rsvp button {
-    border: 0.5px solid #3e4041;
+    border: 0.5px solid #3d4737;
     border-radius: 0;
     background: transparent;
-    color: #3e4041;
-    font-family: "Cormorant Garamond";
-    padding: 10px 12px;
+    color: #3d4737;
+    font-family: "Cardo";
+    padding: 5px 50px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.rsvp button:hover {
+    background-color: #3d473721;
+}
+
+.rsvp .form-bottom {
+    padding-top: 20px;
 }

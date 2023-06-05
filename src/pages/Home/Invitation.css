@@ -1,117 +1,15 @@
-.invite {
-    height: 100%;
-}
-
-.invite-container{
+.invite .text {
     text-align: center;
-    padding: 30px 40px 40px 40px;
-    position: relative;
-}
-
-.text-container {
-    max-width: 380px;
-    padding: 20px 0;
 }
 
 .invite .text p {
-    font-size: 12px;
-    line-height: 1.5;
-    letter-spacing: 1px;
-    margin: 5px 0px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.invite .text h1 {
-    font-family: "Mrs Saint Delafield";
-    font-size: 48px;
+.invite .text .names {
+    margin: 40px 0;
 }
-.invite .text .first-letter {
-    font-size: 60px;
-    letter-spacing: -4px;
-}
-
-.invite .text h2 {
-    margin-top: -10px;
-}
-.invite .text .and {
-    font-size: 25pt;
-    margin:  0 10px 5px 10px;
-}
-
-.invite .invite-section {
-    margin: 20px 0;
-}
-
-.invite .names {
-    color: #978f86;
-}
-
-@keyframes bounce {
-    0%, 10%, 100% {
-        transform: translateY(0);
-    }
-	50%, 60% {
-        transform: translateY(15px);
-    }
-}
-
-.invite .scroll-down {
-    color: #978f86;
-    animation: bounce 3s infinite;
-}
-
-@media (max-width: 991px) {
-    .invite {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .invite-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-    .invite .text {
-        display: flex;
-        align-items: center;
-    }
-    .text-container {
-        padding-bottom: 30px;
-    }
-    .photos {
-        height: unset;
-        order: 1;
-    }
-    .photos .positions{
-        height: 25vh;
-        width: 30vh;
-    }
-
-    .invite .scroll-down {
-        order: 2;
-        margin-top: 30px;
-        margin-bottom: 20px;
-    }
-}
-
-@media (min-width: 992px) {
-    .invite {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .invite-container {
-        display: flex;
-        justify-content: center;
-        gap: 100px;
-    }
-    .invite .text {
-        display: flex;
-        align-items: center;
-    }
-
-    .invite .scroll-down {
-        position: absolute;
-        bottom: 60px;
-        right: 50%;
-    }
+.invite .text .names h3 {
+    margin: 5px 0;
 }

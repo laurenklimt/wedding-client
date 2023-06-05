@@ -8,9 +8,9 @@ h1 {
 }
 
 html, body {
-  background-color: #f5f2f0;
-  color: #3e4041;
-  font-family: "Cormorant Garamond";
+  background-color: #f1ede1;
+  color: #3d4737;
+  font-family: "Cardo";
 }
 
 .hebrew {
@@ -47,7 +47,8 @@ html, body {
 
 
 a {
-  color: #978f86;
+  color: #3d4737;
+  /* opacity: 0.8; */
   text-decoration: none;
 }
 

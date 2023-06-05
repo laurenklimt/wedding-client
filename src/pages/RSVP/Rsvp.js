@@ -78,14 +78,15 @@ function RSVP() {
                     <div className="container rsvp">
                         <h1>RSVP</h1>
                         <p>13 AUGUST 2023 -  <b>{subheading}</b></p>
-                        <p>{loading}</p>
                         <form>
                             {guests?.map( (item, index) => (
                                 <Guest key={`guest-${index}`} index={index} />
                             ))}
-                            <p id="form-error" className={"form-error " + error}><b>PLEASE RSVP FOR ALL GUESTS.</b></p>
-                            <button type="submit" onClick={handleSubmit}>RSVP</button>
-                            <p id="form-success" className={"form-success " + success}><b>Thank you for submitting your RSVP.</b></p>
+                            <div className="form-bottom">
+                                <p id="form-error" className={"form-error " + error}><b>PLEASE RSVP FOR ALL GUESTS.</b></p>
+                                <button type="submit" onClick={handleSubmit}>RSVP</button>
+                                <p id="form-success" className={"form-success " + success}><b>Thank you for submitting your RSVP.</b></p>
+                            </div>
                         </form>
                     </div>
                 </Context.Provider>

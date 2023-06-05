@@ -3,7 +3,9 @@ import { useLocation, useNavigate } from "react-router-dom";
 import axios from 'axios';
 import './Home.css';
 import Invitation from './Invitation';
-import HomeNav from './HomeNav';
+import Photos from "./Photos";
+import NavBar from "../../components/NavBar/NavBar";
+import Flowers from '../../assets/flowers.jpeg'
 
 function Home() {
     const navigate = useNavigate()
@@ -67,10 +69,16 @@ function Home() {
         )
     } else {
         return (
-            <div className="home">
-                <Invitation guests={guests}/>
-                <HomeNav />
-            </div>
+            <>
+                <NavBar />
+                <div className="container">
+                    <div className="home">
+                        <Photos />
+                        <Invitation guests={guests}/>
+                    </div>
+                </div>
+                <div class="flowers"><img src={Flowers} width="100%"/></div>
+            </>
         )
     }
 }

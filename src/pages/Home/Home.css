@@ -1,15 +1,39 @@
 .home {
-    scroll-snap-type: y mandatory;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    overflow: scroll;
+    animation: 3s fadeIn;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
 }
 
-.home > div {
-    scroll-snap-align: center;
+.flowers {
+    display: none;
 }
-  
-.invite {
-    animation: 3s fadeIn;
+
+@media (max-width: 767px) {
+    .home {
+        margin-top: 70px;
+    }
+    .flowers {
+        display: block;
+    }
+}
+
+@media (max-width: 991px) {
+    .home {
+        flex-direction: column;
+        padding-top: 30px;
+    }
+    .photos {
+        order: 1;
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .photos {
+        width: 40%;
+    }
+    .invite {
+        width: 50%;
+    }
 }

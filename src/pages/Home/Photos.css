@@ -1,13 +1,6 @@
-.photos {
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    align-items: center;
-}
-
 .photos .positions {
-    height: 50vh;
-    width: 60vh;
+    width: 100%;
+    aspect-ratio: 6/5;
     position: relative;
     text-align: left;
 }
@@ -21,5 +14,30 @@
     height: 50%;
     right: 0;
     bottom: 25%;
-    border: 2px solid #f5f2f0;
+    border: 2px solid #f1ede1;
+}
+
+.photos .rsvp-button {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.photos .rsvp-button button {
+    border: 0.5px solid #3d4737;
+    font-family: "Cardo";
+    color: #3d4737;
+    background: transparent;
+    padding: 5px 50px;
+}
+
+.photos .rsvp-button button:hover {
+    cursor: pointer;
+    background-color: #3d473721;
+}
+
+
+@media (min-width: 990px) {
+    .photos {
+        padding-top: 70px;
+    }
 }
