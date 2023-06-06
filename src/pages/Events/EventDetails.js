@@ -1,4 +1,4 @@
-const Aufruf = {
+const AufrufDetails = {
     event: 'Aufruf | Call up',
     subtext: 'Call up',
     description: 'Benji and Lauren will both be called to the Torah during Mincha (afternoon service) which will be followed by a kiddush and havdalah (bringing out Shabbat).',
@@ -21,7 +21,7 @@ const Chuppah = {
     day: 13,
     month: 'August',
     year: 2023,
-    description: 'The ceremony will begin with the Bedekin, followed immediately by the Chuppah. Please aim to arrive by 3:00pm.',
+    description: 'The ceremony will begin with the Bedekin, followed immediately by the Chuppah. Please aim to arrive by 3pm.',
     time: '3:15pm sharp',
     location: ['The Central Synagogue,', '15 Bon Accord Avenue, Bondi Junction,', 'Sydney, NSW'],
     dress: 'Lounge Suit',
@@ -38,7 +38,7 @@ const Reception = {
     day: 13,
     month: 'August',
     year: 2023,
-    description: 'The celebrations continue! The doors to the venue will open at 6pm. There will be refreshments at the Synagogue to enjoy before you head off to the reception.',
+    description: 'Our celebrations continue. Please enjoy High Tea at the Synagogue before you head off to the reception.',
     time: '6pm',
     location: ['Ivy Ballroom,', 'Level 1, 320 George Street,', 'Sydney, NSW'],
     dress: 'Lounge Suit',
@@ -49,6 +49,6 @@ const Reception = {
     }
 }
 
-const EventDetails = [ Aufruf, Chuppah, Reception ]
+const EventDetails = [ Chuppah, Reception ]
 
-export default EventDetails
+export { EventDetails, AufrufDetails }

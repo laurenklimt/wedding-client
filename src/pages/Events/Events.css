@@ -1,115 +1,67 @@
 .container.events {
     margin-bottom: 80px;
-    padding-top: 100px;
+    padding-top: 80px;
     animation: 2s fadeIn;
 }
 @media (min-width: 768px) {
     .container.events {
-        padding-top: 40px;
+        padding-top: 20px;
     }
 }
 
-.events .event {
-    margin: 50px 0;
-    border-bottom: 0.5px solid #c8c4b7;
-    padding-bottom: 50px;
+.events .events-group {
+    margin-top: 40px;
 }
 
-.events .photo {
-    margin-right: 20px;
+@media (min-width: 992px) {
+    .events .events-group {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .events .events-group .event {
+        width: 45%;
+    }
 }
 
-.events .event h3 {
-    margin: 5px 0;
-}
-.events .event p {
-    margin-top: 0;
+@media (max-width: 991px) {
+    .events .event {
+        margin-bottom: 50px;
+    }
 }
 
 .events .event .detail {
     display: flex;
+    gap: 20px;
+    margin-bottom: 18px;
+}
+
+.events .event .detail.top {
+    gap: 30px;
 }
 
 .events .event .detail .detail-1 {
-    margin-right: 8px;
+    min-width: 65px;
 }
 
-.events .event .detail .address:not(:last-child) {
+.events .event .detail.top .title p {
     margin: 0;
 }
 
-.events .bottom-links {
-    padding-top: 20px;
-}
-
-.events .bottom-links a {
-    display: block;
-    margin-bottom: 20px;
-    color: unset;
-}
-
-.events a:focus, .events a:hover, .events a:active, .events a:target {
-    opacity: 50%;
-}
-
-.events a i {
-    font-size: 12px;
-    margin-left: 5px;
-}
-
-.events .date {
-    text-align: center;
-    padding-right: 20px;
-    border-right: 0.5px solid #c8c4b7;
-}
-
-.events .date h3 {
-    margin-top: 0;
+.events .event .detail.top .title h2 {
     margin-bottom: 10px;
 }
 
-.events .title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.event .detail.top {
-    margin-bottom: 20px;
-}
-
-.events h2 {
+.events .event .detail p {
     margin: 0;
 }
 
-.events h3 {
-    font-weight: normal;
-}
-
 .events .calendar a {
-    padding: 10px;
+    text-decoration: underline solid 0.5px;
+    padding: 0 4px;
+    color: #978f86;
 }
-
-@media (min-width: 992px) {
-    .events-group {
-        display: flex;
-    }
-    .events-group .event {
-        border-bottom: 0;
-        flex: 1;
-        align-items: stretch;
-    }
-    .events .event {
-        margin: 30px 0;
-        padding-bottom: 30px;
-        padding-top: 30px;
-    }
-    .events-group .event + .event {
-        padding-left: 40px;
-        margin-left: 40px;
-        border-left: 0.5px solid #c8c4b7;
-    }
-    .events .calendar a {
-        padding: 2px;
-    }
+.events .calendar a:hover {
+    color: #978f8690;
 }

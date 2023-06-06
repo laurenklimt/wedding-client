@@ -19,7 +19,7 @@ function HomeNav(props) {
                 </div>
                 <div className="col link">
                     <div className="nav-component">
-                        <Link to="/events">
+                        <Link to="/event-details">
                             <div className="button-text">
                                 <div className="main-text">EVENTS</div>
                             </div>

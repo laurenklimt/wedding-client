@@ -1,11 +1,11 @@
 .container.registry {
     margin-bottom: 80px;
-    padding-top: 100px;
+    padding-top: 80px;
     animation: 2s fadeIn;
 }
 @media (min-width: 768px) {
     .container.registry {
-        padding-top: 40px;
+        padding-top: 20px;
     }
 }
 
@@ -14,18 +14,13 @@
     padding-bottom: 35px;
 }
 
-.registry .bottom-links {
-    padding-top: 20px;
+.registry a {
+    text-decoration: underline solid 0.5px;
+    padding: 0 4px;
+    color: #978f86;
 }
-
-.registry .bottom-links a {
-    display: block;
-    margin-bottom: 20px;
-    color: unset;
-}
-
-.registry a:focus, .registry a:hover, .registry a:active, .registry a:target {
-    text-decoration: underline;
+.registry a:hover {
+    color: #978f8690;
 }
 
 .registry a i {

@@ -23,15 +23,6 @@
     padding: 10px 0;
 }
 
-.nav-bar .item.l-b {
-    font-family: "Mrs Saint Delafield";
-    font-size: 18pt;
-    padding-bottom: 5px;
-}
-.nav-bar .item.l-b .and {
-    font-size: 10pt;
-}
-
 .menu {
     position: absolute;
     z-index: 1000;

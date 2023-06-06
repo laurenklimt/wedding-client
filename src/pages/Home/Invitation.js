@@ -27,8 +27,8 @@ function Invitation(props) {
                         <h3 className='hebrew'>חנה וישראל בנימין</h3>
                     </div>
                     <p>SUNDAY, 13TH AUGUST 2023<br/><span className='hebrew'>כ"ו אב תשפ"ג</span></p>
-                    <p><b>THE CHUPPAH</b><br/>THE CENTRAL SYNAGOGUE<br/>15 BON ACCORD AVENUE, BONDI JUNCTION, SYDNEY<br/>3.15 PM SHARP</p>
-                    <p><b>THE RECEPTION</b><br/>IVY BALLROOM<br/>LEVEL 1/320 GEORGE STREET, SYDNEY<br/>6:00 PM<br/>DRESS LOUNGE SUIT</p>
+                    <p><b>THE CHUPPAH</b><br/>THE CENTRAL SYNAGOGUE<br/>15 BON ACCORD AVENUE, BONDI JUNCTION, SYDNEY<br/>3.15PM SHARP</p>
+                    <p><b>THE RECEPTION</b><br/>IVY BALLROOM<br/>LEVEL 1/320 GEORGE STREET, SYDNEY<br/>6:00PM<br/>DRESS LOUNGE SUIT</p>
                 </div>
             </div>
         </div>

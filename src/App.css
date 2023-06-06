@@ -13,6 +13,11 @@ html, body {
   font-family: "Cardo";
 }
 
+p {
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+}
+
 .hebrew {
   font-family: "Tinos";
   font-weight: normal;

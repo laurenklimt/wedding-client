@@ -1,11 +1,11 @@
 .container.rsvp {
     margin-bottom: 80px;
-    padding-top: 100px;
+    padding-top: 80px;
     animation: 2s fadeIn;
 }
 @media (min-width: 768px) {
     .container.rsvp {
-        padding-top: 40px;
+        padding-top: 20px;
     }
 }
 

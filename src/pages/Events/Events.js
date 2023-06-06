@@ -1,24 +1,21 @@
-// import { useParams } from 'react-router';
-import { Link } from "react-router-dom";
 import './Events.css'
-import EventDetails from './EventDetails'
+import { EventDetails } from './EventDetails'
 import NavBar from "../../components/NavBar/NavBar";
 import engagement1 from '../../assets/engagement-1.JPG'
 import engagement2 from '../../assets/engagement-2.jpeg'
-import engagement3 from '../../assets/engagement-3.JPG'
-import aufruf from '../../assets/cal/aufruf.ics'
 import chuppah from '../../assets/cal/chuppah.ics'
 import reception from '../../assets/cal/reception.ics'
+import Details from "../Details/Details";
 
 function Events() {
-    const photos = [engagement1, engagement2, engagement3]
-    const cal = [aufruf, chuppah, reception]
+    const photos = [engagement1, engagement2]
+    const cal = [chuppah, reception]
 
     return (
         <>
             <NavBar />
             <div className="container events">
-                <h1>EVENTS</h1>
+                <h1>EVENT DETAILS</h1>
                 <div className="events-group">
                     { EventDetails?.map((ev, i) => {
                         return (
@@ -57,10 +54,7 @@ function Events() {
                         )
                     }) }
                 </div>
-                <div className="bottom-links">
-                    <Link to="/details"><b>Details</b> about travel, venues and more<i className="material-icons">arrow_forward_ios</i></Link>
-                    <Link to="/rsvp"><b>RSVP</b> for the Chuppah and Reception<i className="material-icons">arrow_forward_ios</i></Link>
-                </div>
+                <Details/>
             </div>
         </>
     )

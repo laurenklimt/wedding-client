@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react"
 import './NavSmall.css'
+import Heart from '../../assets/heart.png'
 
 function NavSmall() {
     const [menu, setMenu] = useState('')
@@ -28,7 +29,7 @@ function NavSmall() {
     return (
         <>
             <div className="nav-bar">
-                <Link to="/" className="item l-b">L <span className="and">&</span> B</Link>
+                <Link to="/" className="item l-b"><img src={Heart} alt="heart" height='40'/></Link>
                 <span className="item menu-icon"> 
                     <i className={`material-icons ${open}`} onClick={() => OpenMenu()}>menu</i>
                     <i className={`material-icons ${close}`} onClick={() => CloseMenu()}>close</i>
@@ -38,9 +39,8 @@ function NavSmall() {
                 <div className="container">
                     <Link className="link" to="/">INVITATION</Link>
                     <Link className="link" to="/rsvp">RSVP</Link>
-                    <Link className="link" to="/events">EVENTS</Link>
-                    <Link className="link" to="/details">DETAILS</Link>
-                    <Link className="link" to="/registry">REGISRTY</Link>
+                    <Link className="link" to="/event-details">EVENT DETAILS</Link>
+                    <Link className="link" to="/registry">REGISTRY</Link>
                 </div>
             </div>
         </>
