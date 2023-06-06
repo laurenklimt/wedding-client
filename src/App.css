@@ -53,7 +53,7 @@ p {
 
 a {
   color: #3d4737;
-  /* opacity: 0.8; */
+  cursor: pointer;
   text-decoration: none;
 }
 
