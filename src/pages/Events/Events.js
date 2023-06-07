@@ -25,8 +25,9 @@ function Events() {
                                         <img src={photos[i]} width="100" alt="Lauren and Benji's engagement" />
                                     </div>
                                     <div className='title'>
-                                        <h2>{ev.day} {ev.month.slice(0, 3).toUpperCase()}</h2>
-                                        <p>{ev.event.toUpperCase()}</p>
+                                        {/* <h2>{ev.day} {ev.month.slice(0, 3).toUpperCase()}</h2> */}
+                                        <h2>{ev.event.toUpperCase()}</h2>
+                                        <p>{ev.subtext}</p>
                                     </div>
                                 </div>
                                 

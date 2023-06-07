@@ -16,13 +16,13 @@ const AufrufDetails = {
 }
 
 const Chuppah = {
-    event: 'Chuppah | Ceremony',
-    subtext: 'Ceremony',
+    event: 'Chuppah',
+    subtext: '3:00PM',
     day: 13,
     month: 'August',
     year: 2023,
-    description: 'The ceremony will begin with the Bedekin, followed immediately by the Chuppah. Please aim to arrive by 3pm.',
-    time: '3:15pm sharp',
+    description: 'The Bedekin will start at 3.15pm followed by the Chuppah. Please allow for some extra travel time on the day as traffic will be heavier in the area due to the City2Surf. A High Tea will follow the ceremony in the foyer of the Synagogue before moving on to the reception.',
+    time: '3:00pm',
     location: ['The Central Synagogue,', '15 Bon Accord Avenue, Bondi Junction,', 'Sydney, NSW'],
     dress: 'Lounge Suit',
     calendar: {
@@ -34,12 +34,12 @@ const Chuppah = {
 
 const Reception = {
     event: 'Reception',
-    subtext: '',
+    subtext: '6:00PM',
     day: 13,
     month: 'August',
     year: 2023,
-    description: 'Our celebrations continue. Please enjoy High Tea at the Synagogue before you head off to the reception.',
-    time: '6pm',
+    description: 'The party begins! We are excited to celebrate together with dinner, drinks and lots of dancing - comfortable footwear is a must. We recommend the use of rideshare and taxi services to travel between the venues with ease. Parking details can be found below.',
+    time: '6:00pm',
     location: ['Ivy Ballroom,', 'Level 1, 320 George Street,', 'Sydney, NSW'],
     dress: 'Lounge Suit',
     calendar: {
