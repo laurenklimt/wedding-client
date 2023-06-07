@@ -5,7 +5,7 @@ import './Home.css';
 import Invitation from './Invitation';
 import Photos from "./Photos";
 import NavBar from "../../components/NavBar/NavBar";
-import Flowers from '../../assets/flowers.jpeg'
+import Flowers from '../../assets/flowers.jpg'
 
 function Home() {
     const navigate = useNavigate()
