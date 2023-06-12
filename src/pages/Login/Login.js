@@ -8,7 +8,6 @@ function Login() {
     const [email, setEmail] = useState('')
     const [error, setError] = useState('hidden')
 
-    console.log(email)
     useEffect(()=>{
         localStorage.removeItem('id')
     }, []) 

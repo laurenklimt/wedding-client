@@ -5,6 +5,8 @@ import Events from '../pages/Events/Events';
 import Registry from '../pages/Registry/Registry';
 import Login from '../pages/Login/Login';
 import ScrollToTop from './ScrollToTop';
+import Admin from '../pages/Admin/Admin';
+import Responses from '../pages/Admin/Responses';
 
 function Router() {
 
@@ -14,6 +16,14 @@ function Router() {
             auth = true
         }
         return (auth ? <Outlet /> : <Navigate to="/login" />)
+    }
+
+    const AdminRoutes = () => {
+        let auth = false
+        if (localStorage.getItem("admin")) {
+            auth = true
+        }
+        return (auth ? <Outlet /> : <Navigate to="/admin" />)
     }
       
 
@@ -28,6 +38,10 @@ function Router() {
                         <Route path="/rsvp" element={<RSVP />} />
                         <Route path="/event-details" element={<Events />} />
                         <Route path="/registry" element={<Registry />} />
+                    </Route>
+                    <Route path="/admin" element={<Admin />} />
+                    <Route element={<AdminRoutes />} >
+                        <Route path="/responses" element={<Responses />} />
                     </Route>
                 </Routes>
             </BrowserRouter>

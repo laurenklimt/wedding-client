@@ -1,0 +1,9 @@
+.responses th, .responses td {
+    white-space: nowrap;
+    padding-right: 15px;
+}
+
+.response-table {
+    overflow-x: auto;
+    padding: 20px 0 40px 0;
+}
