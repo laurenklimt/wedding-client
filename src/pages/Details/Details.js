@@ -10,7 +10,7 @@ function Details() {
                 <p>5TH AUGUST 2023</p>
                 <p>Benji and Lauren will both be called to the Torah at Shira Hadasha, 222 Balaclava Road, Caulfield, Melbourne. The Mincha (afternoon) service will start at 4:30pm, followed by kiddush and havdalah (bringing out Shabbat).</p>
                 <div className="calendar">
-                    Add to calendar <a href={AufrufDetails.google} target="_blank" rel="noreferrer">Google</a> | <a href={aufrufCal} download>iCal</a> | <a href={AufrufDetails.outlook} target="_blank" rel="noreferrer">Outlook</a>
+                    Add to calendar <a href={AufrufDetails.calendar.google} target="_blank" rel="noreferrer">Google</a> | <a href={aufrufCal} download>iCal</a> | <a href={AufrufDetails.calendar.outlook} target="_blank" rel="noreferrer">Outlook</a>
                 </div>
             </div>
         )
