@@ -11,7 +11,7 @@ function Registry() {
                 <div className='section'>
                     <p>We are so excited to be celebrating with you at our wedding. Should you wish to help us celebrate with a gift we have created a gift registry of things we would love for our home and a wishing well. We are already so grateful.</p>
                     <p><a href="https://www.petersofkensington.com.au/gift-registry/giftregistrysearch/giftregistrydetails/?Id=b5059e38-5cd7-45fe-8289-b1f4d3968cb9" target="_blank" rel="noreferrer">Peter's of Kensington (registry no. 1755200)<i className="material-icons">open_in_new</i></a></p>
-                    {/* <p><a href="https://thesilverco.com/wedding-registries/" target="_blank" rel="noreferrer">Antique Silver Co. (Judaica)<i className="material-icons">open_in_new</i></a></p> */}
+                    <p><a href="https://thesilverco.com/wedding-registries/" target="_blank" rel="noreferrer">Antique Silver Co. (Judaica)<i className="material-icons">open_in_new</i></a></p>
                     <p><a href="https://www.thehintregistry.com.au/browse/laurenandbenji" target="_blank" rel="noreferrer">Wishing Well<i className="material-icons">open_in_new</i></a></p>
                 </div>
             </div>
