@@ -7,3 +7,18 @@
     overflow-x: auto;
     padding: 20px 0 40px 0;
 }
+
+.responses button {
+    margin: 5px 2px;
+    padding: 2px 5px;
+    cursor: pointer;
+    border: 0.5px solid #3d4737;
+    background: #3d47370b;
+}
+.responses button:hover {
+    background: #3d47371a
+}
+.responses button.selected {
+    background: #3d473755
+}
+

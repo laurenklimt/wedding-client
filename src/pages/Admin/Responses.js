@@ -4,6 +4,8 @@ import './Responses.css'
 
 function Responses() {
     const [parties, setParties] = useState([])
+    const [filter, setFilter] = useState('')
+    const [owner, setOwner] = useState('')
 
     useEffect( () => {
         const fetchParties = async() => {
@@ -18,18 +20,26 @@ function Responses() {
         fetchParties()
     },[])
 
-    const Rows = () => {
-        const rows = parties?.map((party) => {
-            console.log(party)
-            let date = party.updated.substr(0,10)
-            return (
-                party.guests.map(guest => {
-                    let rsvp = ''
-                    if (guest.rsvp === true) {
-                        rsvp = 'Attending'
-                    } else if (guest.rsvp === false) {
-                        rsvp = 'Not attending'
-                    }
+    const Rows = (guests, date) => {
+        const rows = guests.map(guest => {
+            let rsvp = ''
+            if (guest.rsvp === true) {
+                rsvp = 'Attending'
+            } else if (guest.rsvp === false) {
+                rsvp = 'Not attending'
+            }
+            if(filter === '') {
+                return (
+                    <tr>
+                        <td>{guest.firstName}</td>
+                        <td>{guest.lastName}</td>
+                        <td>{rsvp}</td>
+                        <td>{guest.diet}</td>
+                        <td>{date}</td>
+                    </tr>
+                )
+            } else if(filter === 'attending') {
+                if(guest.rsvp === true) {
                     return (
                         <tr>
                             <td>{guest.firstName}</td>
@@ -39,17 +49,62 @@ function Responses() {
                             <td>{date}</td>
                         </tr>
                     )
-                })
-            )
+                } else {
+                    return null
+                }
+            } else if(filter === 'no-response') {
+                if(guest.rsvp === undefined) {
+                    return (
+                        <tr>
+                            <td>{guest.firstName}</td>
+                            <td>{guest.lastName}</td>
+                            <td>{rsvp}</td>
+                            <td>{guest.diet}</td>
+                            <td>{date}</td>
+                        </tr>
+                    )
+                } else {
+                    return null
+                }
+            } else {
+                return null
+            }
         })
+
         return rows
+    }
+
+    const Table = () => {
+        const table = parties?.map((party) => {
+            let date = party.updated.substr(0,10)
+            let guests = party.guests
+            if(owner === '') {
+                return Rows(guests, date)
+            } else {
+                if(party.owner === owner) {
+                    return Rows(guests, date)
+                } else {
+                    return null
+                }
+            }
+        })
+        return table
     }
 
     return(
         <div className="container">
             <div className="responses">
                 <h1>Responses</h1>
-                <div></div>
+                <div>
+                    <button className={`${filter==='attending' ? "selected" : ""}`} onClick={() => setFilter('attending')}>Attending</button>
+                    <button className={`${filter==='no-response' ? "selected" : ""}`} onClick={() => setFilter('no-response')}>Not responded</button>
+                </div>
+                <div>
+                    <button className={`${owner===0 ? "selected" : ""}`} onClick={() => setOwner(0)}>L&B</button>
+                    <button className={`${owner===1 ? "selected" : ""}`} onClick={() => setOwner(1)}>Klimts</button>
+                    <button className={`${owner===2 ? "selected" : ""}`} onClick={() => setOwner(2)}>Prawers</button>
+                </div>
+                <div><button onClick={() => {setFilter(''); setOwner('')}}>Reset table</button></div>
                 <div className='response-table'>
                     <table width='100%'>
                         <thead>
@@ -62,7 +117,7 @@ function Responses() {
                             </tr>
                         </thead>
                         <tbody>
-                            <Rows />
+                            <Table />
                         </tbody>
                     </table>
                 </div>
