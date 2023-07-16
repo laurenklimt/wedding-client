@@ -12,8 +12,13 @@ function Photos() {
                 <img className='big' src={sunset} alt="sunset"/>
                 <img className='small' src={falls} alt="view"/>
             </div>
-            <div className='rsvp-button'>
-                <button onClick={() => navigate("/rsvp")}>RSVP HERE</button>
+            <div className='home-buttons'>
+                <div className='rsvp-button'>
+                    <button onClick={() => navigate("/event-details")}>EVENT DETAILS</button>
+                </div>
+                <div className='rsvp-button'>
+                    <button onClick={() => navigate("/registry")}>REGISTRY</button>
+                </div>
             </div>
         </div>
     );

@@ -17,10 +17,20 @@
     border: 2px solid #f1ede1;
 }
 
-.photos .rsvp-button {
+.photos .home-buttons {
     margin-top: 50px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
+
+@media (max-width: 767px) {
+    .photos .home-buttons {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
 
 .photos .rsvp-button button {
     border: 0.5px solid #3d4737;

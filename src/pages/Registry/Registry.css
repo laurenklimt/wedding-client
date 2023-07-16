@@ -27,3 +27,20 @@
     font-size: 12px;
     margin-left: 5px;
 }
+
+.registry .event-button {
+    margin-top: 50px;
+}
+
+.registry .event-button button {
+    border: 0.5px solid #3d4737;
+    font-family: "Cardo";
+    color: #3d4737;
+    background: transparent;
+    padding: 5px 50px;
+}
+
+.registry .event-button button:hover {
+    cursor: pointer;
+    background-color: #3d473721;
+}

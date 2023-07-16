@@ -1,8 +1,11 @@
 import './Details.css'
 import { AufrufDetails } from '../Events/EventDetails';
 import aufrufCal from '../../assets/cal/aufruf.ics'
+import { useNavigate } from "react-router-dom";
 
 function Details() {
+    const navigate = useNavigate()
+
     const Aufruf = () => {
         return(
             <div className='section'>
@@ -40,12 +43,22 @@ function Details() {
         )
     }
 
+    const Registry = () => {
+        return(
+            <div className='section'>
+                <h3>REGISTRY</h3>
+                <p>Should you wish to help us celebrate with a gift we have created a gift registry which can be found <button onClick={() => navigate("/registry")}>here</button>.</p>
+            </div>
+        )
+    }
+
     return (
         <>
             <div className="details">
                 <Aufruf />
                 <Sydney />
                 <Transport />
+                <Registry />
             </div>
         </>
     )
