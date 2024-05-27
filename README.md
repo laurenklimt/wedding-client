@@ -1,4 +1,4 @@
-![image](https://github.com/laurenklimt/wedding-client/assets/30426876/5dac4409-2fae-4af2-9e54-653466d1cdc7)# wedding-client
+# wedding-client
 I built a RSVP website for my wedding using React. The client connects to the server which can be found at https://github.com/laurenklimt/wedding-server.
 
 The purpose of the website was to to provide guests with event details and collect RSVPs. It was important for the website to be mobile responsive and easy for guests to navigate around.
