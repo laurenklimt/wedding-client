@@ -1,4 +1,4 @@
-# wedding-client
+![image](https://github.com/laurenklimt/wedding-client/assets/30426876/5dac4409-2fae-4af2-9e54-653466d1cdc7)# wedding-client
 I built a RSVP website for my wedding using React. The client connects to the server which can be found at https://github.com/laurenklimt/wedding-server.
 
 The purpose of the website was to to provide guests with event details and collect RSVPs. It was important for the website to be mobile responsive and easy for guests to navigate around.
@@ -36,4 +36,4 @@ The RSVP form populates on load with the last submitted data
 
 RSVP page - mobile
 
-![image](https://github.com/laurenklimt/wedding-client/assets/30426876/1f141898-48ba-43ee-9901-5e58aa45b44f)
+![image](https://github.com/laurenklimt/wedding-client/assets/30426876/a2f634b9-2606-49d1-bb06-3f97c54dd088)
