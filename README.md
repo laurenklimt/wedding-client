@@ -11,5 +11,11 @@ Therefore, there are two ways to access the website as a test guest:
 Both authentication methods store the userID in localhost so that the guest will remain authenicated on their device when they revisit the website. To test both authentication methods, use incognito mode in your browser.
 
 __Website features__
-
+Autentication page - desktop
 ![image](https://github.com/laurenklimt/wedding-client/assets/30426876/f5d15b63-271b-4d6b-9368-f4e6014eb3b7)
+Autentication page - mobile (error message)
+![image](https://github.com/laurenklimt/wedding-client/assets/30426876/a47bd4c4-2fdb-4945-b101-bdda8d773b79)
+
+
+Home page - desktop
+![image](https://github.com/laurenklimt/wedding-client/assets/30426876/e1a14063-8459-47fa-b647-12d5a6b2052d)
