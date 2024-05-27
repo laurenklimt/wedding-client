@@ -8,6 +8,7 @@ The website was built so that only people who were invited to the wedding can se
 Therefore, there are two ways to access the website as a test guest:
   1. Navigate to the personalised link https://laurenbenjiwedding.com/?id=66541747441638d19d0efa41
   2. Navigate to the home page https://laurenbenjiwedding.com/ and authenticate using the email adress **test@email.com**
+
 Both authentication methods store the userID in localhost so that the guest will remain authenicated on their device when they revisit the website. To test both authentication methods, use incognito mode in your browser.
 
 ## Website features
