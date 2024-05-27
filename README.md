@@ -23,16 +23,17 @@ Autentication page - mobile (error message)
 
 
 Home page - desktop with nav bar
-![image](https://github.com/laurenklimt/wedding-client/assets/30426876/e1a14063-8459-47fa-b647-12d5a6b2052d)
+![image](https://github.com/laurenklimt/wedding-client/assets/30426876/9556185c-95f0-44b3-a1ca-8953b7d00d69)
 
 Home page - mobile with sticky hamburger menu
-![Image (1)](https://github.com/laurenklimt/wedding-client/assets/30426876/286cbebd-1403-4811-afcb-9371ab0f88c6)
+![image](https://github.com/laurenklimt/wedding-client/assets/30426876/cfec52da-677a-4875-813a-7129aa8f4068)
 
 
 RSVP page - desktop
 
 The RSVP form populates on load with the last submitted data
-![image](https://github.com/laurenklimt/wedding-client/assets/30426876/0be848f0-82b3-4aa4-8cf1-73ed377c0544)
+![image](https://github.com/laurenklimt/wedding-client/assets/30426876/f94d8da8-0623-48ad-94cb-cef7ea0d0864)
 
 RSVP page - mobile
-![Image (2)](https://github.com/laurenklimt/wedding-client/assets/30426876/03b33615-dc85-4c19-9d61-ccdb395b2c96)
+
+![image](https://github.com/laurenklimt/wedding-client/assets/30426876/1f141898-48ba-43ee-9901-5e58aa45b44f)
